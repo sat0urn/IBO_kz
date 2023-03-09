@@ -135,10 +135,9 @@ section {
 }
 
 /* FOOTER */
-footer .container-fluid {
+footer .container {
     color: #ffffff;
     font-size: 1rem;
-    margin: 0;
     padding: 1rem;
 }
 footer ul li {
@@ -153,6 +152,10 @@ footer a:hover {
 a {
     color: #ffffff;
     text-decoration: none;
+}
+
+nav .dropdown-item:active {
+    background-color: #0098CA;
 }
 
 /* CAROUSEL PART */
