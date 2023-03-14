@@ -60,14 +60,14 @@ header::before {
 }
 
 .page-header {
-    padding-top: 8.6rem;
+    padding-top: 11rem;
     margin-bottom: -1px;
     font-size: 1.25rem;
     color: #ffffff;
 }
 
 .page-header .container {
-    padding: 6rem 0 0;
+    padding-top: 2rem;
 }
 
 .page-header_welcome_block {
@@ -77,10 +77,16 @@ header::before {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 }
 
+.page-header_welcome_block h2 {
+    border-bottom: 1px solid rgba(0, 0, 0, .55);
+    padding-bottom: 1.5rem;
+}
+
 .btn-outline-dark:hover {
     color: #fff;
     background-color: #546166;
-    border-color: #546166
+    border-color: #546166;
+    transition: 0.2s;
 }
 
 section {
@@ -94,7 +100,7 @@ section {
     background: linear-gradient(
             90deg,
             rgba(24, 162, 208, 1) 0%,
-            rgba(3, 117, 154, 0.5) 100%
+            rgba(3, 117, 154, 0.6) 100%
     );
 }
 
@@ -103,9 +109,14 @@ section {
     color: #4A4A4B;
 }
 
+.info-elements > .container > .row {
+    border: 1.75px solid #4A4A4B;
+    border-radius: 5px;
+}
+
 /* FEATURE */
 .feature {
-    color: #ffffff;
+    color: #4A4A4B;
     margin-bottom: -1px;
 }
 
@@ -135,10 +146,15 @@ section {
 
 /* PROGRAMS */
 .programs {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .55);
 }
 
 .programs .container .d-flex {
     padding: 2rem 0;
+}
+
+.programs .container a:hover {
+    color: #4A4A4B;
 }
 
 /* ACADEMIC COMMITTEE */
@@ -173,6 +189,10 @@ footer ul li {
     margin-left: -1.7rem;
 }
 
+footer .navbar-brand {
+    border-left: 6px solid white;
+}
+
 footer a:hover {
     color: rgba(0, 0, 0, .55);
 }
@@ -182,6 +202,7 @@ a {
     text-decoration: none;
 }
 
+/* DROPDOWN MENUS, NAVBAR*/
 nav .dropdown-item:active {
     background-color: #0098CA;
 }
@@ -224,9 +245,9 @@ nav .dropdown-item:active {
 
 .carousel-caption-content {
     color: rgba(0, 0, 0, .55);
-    background-color: rgba(255, 255, 255, 0.90);
-    padding: 2rem;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .175);
 }
 
 /* ABOUT KAZAKHSTAN */
@@ -244,7 +265,13 @@ nav .dropdown-item:active {
 
 .about_kz_3 {
     color: rgba(0, 0, 0, .55);
-    background: url("../img/symbols/kz-emblem.png") no-repeat center;
+    background: url("../img/nazarbaev_university_1920x1080.jpeg") no-repeat center;
+    background-size: cover;
+}
+
+.about_kz_4 {
+    color: rgba(0, 0, 0, .55);
+    background: url("../img/symbols/kz-transport.webp") no-repeat center;
     background-size: cover;
 }
 
@@ -258,6 +285,157 @@ nav .dropdown-item:active {
 /* ORGANISATIONS AND HOSTS */
 .org_and_hosts {
     color: rgba(0, 0, 0, .55);
+}
+
+.org_and_hosts_list_title {
+    border-bottom: 2px solid #D9DADB;
+    padding-bottom: 1rem;
+}
+
+.org_and_hosts_main_title {
+    background-color: #F8F9FA;
+    margin-bottom: -1px;
+}
+
+/* NEW NAVBAR */
+.menu {
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu a.parent {
+    margin: 0 30px 0 0;
+}
+
+.menu li {
+    position: relative;
+    list-style: none;
+}
+
+.menu__list {
+    display: flex;
+    margin: 0;
+    padding-left: 15px;
+}
+
+.menu__list > li {
+    margin: 0 30px 0 0;
+    text-align: center;
+}
+
+.menu__link {
+    color: rgba(0, 0, 0, .55);
+}
+
+.menu__link:hover {
+    color: #0098CA;
+    border-bottom: 2px solid #0098CA;
+}
+
+.sub-menu__list {
+    display: none;
+    max-width: 300px;
+    position: absolute;
+    left: 0;
+    top: 19px;
+    padding: 10px 0 0 0;
+    margin-right: 0;
+}
+.sub-menu__list.open {
+    margin: 0 auto;
+}
+
+.sub-menu__list > li {
+    background-color: #fff;
+}
+
+.sub-menu__list > li > a {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    width: 100%;
+}
+
+.sub-menu__list > li > a:hover {
+    background-color: #1B9DC8;
+    color: #F8F9FA;
+}
+
+.sub-menu__link {
+    color: black;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.menu__list > li:hover .menu__link {
+    color: #0098CA;
+    border-bottom: 2px solid #0098CA;
+}
+
+.sub-sub-menu__list {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    max-width: 300px;
+    padding: 0px 0px 0px 5px;
+}
+
+.sub-sub-menu__list > li {
+    background-color: black;
+}
+
+.sub-sub-menu__link {
+    color: #ffffff;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.arrow {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 7.5px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid rgba(0, 0, 0, .55);
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+
+.arrow.active {
+    transform: rotate(-180deg);
+}
+
+.sub-menu__arrow.arrow {
+    right: 10px;
+    border-left: 10px solid black;
+    border-right: none;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.menu__arrow {
+}
+
+body.mouse .menu__list > li:hover .sub-menu__list {
+    display: block;
+}
+
+body.mouse .sub-menu__list > li:hover .sub-sub-menu__list {
+    display: block;
+}
+
+body.touch .sub-menu__list.open {
+    display: block;
+}
+
+body.touch .sub-sub-menu__list.open {
+    display: block;
+}
+
+body.touch .arrow {
+    display: block;
 }
 
 @media (max-width: 576px) {
@@ -281,6 +459,36 @@ nav .dropdown-item:active {
 }
 
 @media (max-width: 767px) {
+    .menu__list {
+        display: block;
+    }
+
+    .menu__list > li {
+        margin: 0px 0px 10px 0px;
+    }
+
+    .sub-menu__list {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .sub-sub-menu__list {
+        padding: 0px 5px;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .sub-menu__arrow.arrow {
+        right: 10px;
+        top: 15px;
+        border-bottom: none;
+        border-left: 10px solid transparent;
+        border-top: 10px solid black;
+        border-right: 10px solid transparent;
+    }
+
     .academic_committee .container .card {
         width: 70%;
         margin: 0 auto;
